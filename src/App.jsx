@@ -9,7 +9,7 @@ function App() {
     async function getBooks() {
       try {
         console.log(BACKEND_URL);
-        const response = await axios.get(`http://${BACKEND_URL}/books/`);
+        const response = await axios.get(`https://${BACKEND_URL}/books/`);
         console.log(response);
         setBooks(response.data);
       } catch (error) {
